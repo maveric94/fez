@@ -11,5 +11,6 @@ public class LevelBlockBaseEditor : Editor
 
         targetObject.Size = EditorGUILayout.Vector3Field("Size", targetObject.Size);
         targetObject.MaterialType = (LevelBlockBase.BlockMaterialType)EditorGUILayout.EnumPopup("Material", targetObject.MaterialType);
+        targetObject.ColliderEnabled = EditorGUILayout.Toggle("Collider enabled", targetObject.ColliderEnabled);
     }
 }

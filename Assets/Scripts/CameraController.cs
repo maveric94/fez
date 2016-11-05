@@ -34,7 +34,7 @@ public class CameraController : MonoBehaviour
     #region Unity lifecycle
 	
     void LateUpdate()
-    {
+    {        
         if (!rotating)
         {
             oldYRotation = transform.eulerAngles.y;

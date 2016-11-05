@@ -86,5 +86,19 @@ public class LevelBlockBase : MonoBehaviour
         }
     }
 
+
+    public bool ColliderEnabled
+    {
+        get
+        {
+            return blockCollider.enabled;
+        }
+
+        set
+        {
+            blockCollider.enabled = value;
+        }
+    }
+
     #endregion
 }
