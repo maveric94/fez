@@ -40,7 +40,7 @@ public class Level : MonoBehaviour
     void CameraController_OnCameraRotated ()
     {
         RaycastHit hitInfo;
-        Vector3 forward = camera.transform.forward.normalized;
+        Vector3 forward = camera.transform.forward;
 
         if (Physics.Raycast(camera.transform.position + new Vector3(0.0f, -0.51f, 0.0f), forward, out hitInfo))
         {            
